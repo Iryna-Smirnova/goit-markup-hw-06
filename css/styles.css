@@ -803,28 +803,36 @@ a.current-page:visited {
   flex-direction: column;
   vertical-align: middle;
   width: 358px;
-
   padding: 0;
-  margin: 0;
 }
 
 .subscribe-input {
   height: 50px;
-  padding: 0 295px 15px 16px;
+  width: 358px;
+  padding: 15px 16px;
+  margin: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   display: flex;
-  align-items: center;
+  text-align: left;
+  align-items: left;
   background: transparent;
+  outline-style: none;
+}
+
+.subscribe-input:focus {
+  background: transparent;
+  outline-style: solid;
+  outline-color: var(--primary-accent-color);
 }
 
 .form-footer {
   margin-top: 0;
   margin-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 7px;
 
   font-weight: 700;
   font-size: 14px;
@@ -833,7 +841,7 @@ a.current-page:visited {
 }
 .subscribe-label {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   padding-top: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -847,7 +855,7 @@ a.current-page:visited {
   min-width: 200px;
   height: 50px;
   margin-left: 12px;
-  margin-top: 30px;
+  margin-top: 37px;
   padding: 10px 62px 10px 28px;
   font-weight: 700;
   font-size: 16px;
@@ -975,9 +983,9 @@ a.current-page:visited {
   border-radius: 4px;
   padding: 10px;
   padding-left: 40px;
+  font-weight: 400;
   font-size: 16px;
   color: var(--primary-text-color);
-  font-weight: 700;
   cursor: pointer;
 }
 
@@ -988,6 +996,9 @@ a.current-page:visited {
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-text-color);
   transition: border 250ms var(--timing-function);
 }
 
@@ -1036,21 +1047,24 @@ a.current-page:visited {
 }
 
 .modal-textarea:focus {
-  color: var(--primary-accent-color);
+  color: var();
   outline: transparent;
-  border: 1px solid #2196f3;
+  border: 1px solid var(--primary-accent-color);
 }
 
 .modal-input:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--primary-accent-color);
 }
 
-.check-line {
+/* .check-line {
   margin-bottom: 30px;
   padding: 0;
-}
+} */
 
 .checkbox-agree {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1058,12 +1072,18 @@ a.current-page:visited {
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 .agree-sub {
   color: var(--primary-accent-color);
   text-decoration: underline;
-  padding-left: 4px;
+  padding-left: 7px;
+}
+.agree-sub-link:visited {
+  color: var(--primary-accent-color);
+  text-decoration: underline;
+  padding-left: 7px;
 }
 
 .checkbox-agree::before {
