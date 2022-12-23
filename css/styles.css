@@ -825,6 +825,9 @@ a.current-page:visited {
 
 .subscribe-input:focus {
   background: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white-color);
   outline-style: solid;
   outline-color: var(--primary-accent-color);
 }
