@@ -674,6 +674,7 @@ a.current-page:visited {
 .under {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -794,7 +795,7 @@ a.current-page:visited {
   flex-direction: row;
   justify-content: flex-start;
   width: 570px;
-  margin-left: 93px;
+  margin-left: 93px; 
   padding: 0;
 }
 
@@ -835,7 +836,7 @@ a.current-page:visited {
 .form-footer {
   margin-top: 0;
   margin-bottom: 20px;
-  padding-top: 7px;
+  padding-top: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -844,11 +845,8 @@ a.current-page:visited {
 }
 .subscribe-label {
   display: block;
-  margin-bottom: 26px;
-  padding-top: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14px;
+  /* margin-top: 0; */
+  margin-bottom: 20px;
   color: var(--white-color);
   text-transform: uppercase;
 }
@@ -896,7 +894,7 @@ a.current-page:visited {
   left: 0;
 
   width: 100%;
-  height: 1024px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
 
   opacity: 1;
@@ -911,6 +909,7 @@ a.current-page:visited {
 
   width: 528px;
   height: 581px;
+  padding: 40px;
   border-radius: 4px;
   background-color: var(--white-color);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14);
@@ -964,10 +963,6 @@ a.current-page:visited {
   fill: var(--primary-accent-color);
 }
 
-.contacts-form {
-  padding: 40px;
-}
-
 .text-form {
   font-weight: 700;
   font-size: 20px;
@@ -989,7 +984,7 @@ a.current-page:visited {
   font-weight: 400;
   font-size: 16px;
   color: var(--primary-text-color);
-  cursor: pointer;
+  cursor: text;
 }
 
 .modal-textarea {
@@ -1021,9 +1016,12 @@ a.current-page:visited {
   color: var(--secondary-text-color);
 }
 
+.input-line {
+  margin-bottom: 10px;
+}
+
 .input-wrapper {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .input-wrapper input {
@@ -1059,14 +1057,12 @@ a.current-page:visited {
   border: 1px solid var(--primary-accent-color);
 }
 
-/* .check-line {
-  margin-bottom: 30px;
-  padding: 0;
-} */
-
-.checkbox-agree {
+.check-line {
   margin-top: 10px;
   margin-bottom: 25px;
+} 
+
+.checkbox-agree {
   padding: 0;
   display: flex;
   align-items: center;
@@ -1081,12 +1077,10 @@ a.current-page:visited {
 .agree-sub {
   color: var(--primary-accent-color);
   text-decoration: underline;
-  padding-left: 7px;
 }
 .agree-sub-link:visited {
   color: var(--primary-accent-color);
   text-decoration: underline;
-  padding-left: 7px;
 }
 
 .checkbox-agree::before {
