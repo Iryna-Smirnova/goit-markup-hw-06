@@ -969,8 +969,9 @@ a.current-page:visited {
   line-height: 1.15;
   text-align: center;
   margin: 0;
+  margin-bottom: 12px;
   padding: 0;
-  padding-bottom: 12px;
+  /* padding-bottom: 12px; */
 }
 
 .modal-input {
